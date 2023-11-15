@@ -14,12 +14,9 @@ phases:
   build:
     commands:
       - echo Executing Build Phase
+      - zip -r lambda.zip lambda
     finally:
-      - echo Executing Build Finally
-  post_build:
-    commands:
-      - echo Executing Post Build Phase
-      - zip -r index_image_lambda_deploy.zip .
+      - echo Executing Build Phase Finally
 artifacts:
-  files: index_image_lambda.zip
+  files: lambda.zip
 
