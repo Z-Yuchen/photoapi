@@ -21,5 +21,5 @@ phases:
       - echo Executing Post Build Phase
       - zip -r index_image_lambda_deploy.zip .
 artifacts:
-  files: index_image_lambda/index_image_lambda.zip
-  base-directory: index_image_lambda
+  files: lambda/index_image_lambda.zip
+  base-directory: lambda
