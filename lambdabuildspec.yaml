@@ -14,7 +14,7 @@ phases:
   build:
     commands:
       - echo Executing Build Phase
-      - zip -r indexImage.zip index_image_lambda 
+      - zip -r indexImage.zip index_image_lambda/*
     finally:
       - echo Executing Build Phase Finally
 artifacts:
