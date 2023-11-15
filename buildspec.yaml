@@ -19,6 +19,6 @@ phases:
   post_build:
     commands:
       - echo Executing Post Build Phase
-      - zip -r frontend.zip .
+      - zip -r frontend.zip frontend
 artifacts:
   files: frontend.zip
