@@ -19,6 +19,6 @@ phases:
   post_build:
     commands:
       - echo Executing Post Build Phase
-      - zip -r photoai.zip/frontend/frontend*
+      - zip -r frontend.zip/build*
 artifacts:
-  files: photoai.zip
+  files: frontend.zip
