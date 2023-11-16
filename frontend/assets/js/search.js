@@ -27,8 +27,9 @@ const makeImages = (shows) => {
   }
   clearImageContainer();
   for (let img of shows) {
-    imgElement = document.createElement('img');
-    imgElement.src = img['url']
+    img = img['url'];
+    imgElement = new Image()
+    imgElement.src = `data:image/jpeg;base64, ${img}`;
     imageContainer.appendChild(imgElement)
   } 
   console.log(imageContainer)
