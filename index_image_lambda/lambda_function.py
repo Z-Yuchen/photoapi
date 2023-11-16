@@ -24,7 +24,7 @@ headers = { "Content-Type": "application/json" }
 
 def lambda_handler(event, context):
     print(event)
-    
+    print('hello')
     for record in event['Records']:
 
         bucket = record['s3']['bucket']['name']
